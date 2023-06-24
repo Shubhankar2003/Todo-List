@@ -44,6 +44,7 @@ python3 -m venv venv
 
 
 5. Initialize the SQLite database:
+
 python3
 >>> from app import app, db
 
