@@ -1,86 +1,66 @@
-Flask To-Do List
+# Flask To-Do List
 
 This is a simple to-do list application built with Flask, SQLite, and SQLAlchemy. The application allows users to create, view, update, and delete tasks.
-Features
 
-    User registration and authentication: Users can sign up for an account and log in to access their to-do list.
-    Create tasks: Users can create new tasks with a title and optional description.
-    View tasks: Users can view their list of tasks, including the task title, description, and status.
-    Update tasks: Users can update the status of a task (e.g., mark as completed).
-    Delete tasks: Users can delete tasks they no longer need.
+## Features
 
-Requirements
+- Create tasks: Users can create new tasks with a title and optional description.
+- View tasks: Users can view their list of tasks, including the task title, description, and status.
+- Update tasks: Users can update the status of a task (e.g., mark as completed).
+- Delete tasks: Users can delete tasks they no longer need.
 
-    Python 3.8 or higher
-    Flask 2.0.1 or higher
-    SQLite 3
-    SQLAlchemy 1.4.0 or higher
+## Requirements
 
-Installation
+- Python 3.8 or higher
+- Flask 2.0.1 or higher
+- SQLite 3
+- SQLAlchemy 1.4.0 or higher
 
-    Clone the repository:
+## Installation
 
-    bash
 
+1. Clone the repository:
 git clone https://github.com/your-username/flask-todo-list.git
 
-Navigate to the project directory:
 
-bash
-
+2. Navigate to the project directory:
 cd flask-todo-list
 
-Create a virtual environment (optional but recommended):
 
-bash
-
+3. Create a virtual environment (optional but recommended):
 python3 -m venv venv
 
-Activate the virtual environment:
 
-    For Unix/Linux:
+4. Activate the virtual environment:
+- For Unix/Linux:
+  ```
+  source venv/bin/activate
+  ```
+- For Windows:
+  ```
+  venv\Scripts\activate
+  ```
 
-    bash
 
-source venv/bin/activate
 
-For Windows:
+5. Initialize the SQLite database:
+python3
+>>> from app import app, db
 
-bash
+>>> app.app_context().push()
 
-    venv\Scripts\activate
+>>> db.create_all()
 
-Install the required dependencies:
 
-bash
+7. Start the application:
 
-pip install -r requirements.txt
+8. Open your web browser and navigate to `http://localhost:5000` to access the application.
 
-Initialize the SQLite database:
+## Configuration
 
-bash
+- The configuration options can be found in the `config.py` file. You can modify the database configuration, secret key, and other settings as needed.
 
-flask db init
-flask db migrate
-flask db upgrade
-
-Start the application:
-
-bash
-
-    flask run
-
-    Open your web browser and navigate to http://localhost:5000 to access the application.
-
-Configuration
-
-    The configuration options can be found in the config.py file. You can modify the database configuration, secret key, and other settings as needed.
-
-Contributing
+## Contributing
 
 Contributions are welcome! If you find any bugs or have suggestions for improvement, please open an issue or submit a pull request.
-License
 
-This project is licensed under the MIT License.
-
-Feel free to customize this README according to your specific Flask to-do list application. Include information about any additional features, deployment instructions, or usage examples if applicable.
