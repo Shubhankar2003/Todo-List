@@ -1,0 +1,46 @@
+body{
+   margin: 0;
+   padding: 0 50px;
+    /* color: pink; */
+    font-family: sans-serif;
+}
+
+.content{
+    /* border:2px solid red; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: nome;
+}
+
+button{
+    margin: 2px;
+    background-color: aqua;
+    
+}
+
+
+ table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  } 
